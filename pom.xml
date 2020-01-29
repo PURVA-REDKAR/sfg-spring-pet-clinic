@@ -47,7 +47,8 @@
     </build>
 
     <scm>
-        <developerConnection>scm:git:git@github.com:PURVA-REDKAR/sfg-spring-pet-clinic.git</developerConnection>
+
+        <developerConnection>scm:svn:https://github.com/PURVA-REDKAR/sfg-spring-pet-clinic.git</developerConnection>
         <tag>sfg-spring-pet-clinic-0.0.1</tag>
     </scm>
 
