@@ -8,6 +8,9 @@ public class Vet extends Person{
     private Owner owner;
     private LocalDate birthDate;
 
+    public Vet() {
+    }
+
     public PetType getPetType() {
         return petType;
     }

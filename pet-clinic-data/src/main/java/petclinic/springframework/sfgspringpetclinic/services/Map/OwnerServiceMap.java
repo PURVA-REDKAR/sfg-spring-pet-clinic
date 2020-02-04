@@ -1,11 +1,11 @@
 package petclinic.springframework.sfgspringpetclinic.services.Map;
 
 import petclinic.springframework.sfgspringpetclinic.model.Owner;
-import petclinic.springframework.sfgspringpetclinic.services.CRUDRepository;
+import petclinic.springframework.sfgspringpetclinic.services.OwnerService;
 
 import java.util.Set;
 
-public class OwnerServiceMap extends AbstractMapService<Owner,Long> implements CRUDRepository<Owner,Long> {
+public class OwnerServiceMap extends AbstractMapService<Owner,Long> implements OwnerService {
 
 
     @Override
@@ -38,4 +38,8 @@ public class OwnerServiceMap extends AbstractMapService<Owner,Long> implements C
     }
 
 
+    @Override
+    public Owner findByLastName(String lastname) {
+        return null;
+    }
 }
