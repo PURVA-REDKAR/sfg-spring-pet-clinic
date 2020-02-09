@@ -22,7 +22,7 @@ public class DataInitializer implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
         Owner owner1 = new Owner();
-        owner1.setId(1L);
+
         owner1.setFristName("Michael");
         owner1.setLastName("Weston");
 
@@ -30,7 +30,7 @@ public class DataInitializer implements CommandLineRunner {
 
 
         Owner owner2 = new Owner();
-        owner2.setId(2L);
+
         owner2.setFristName("Fiona");
         owner2.setLastName("Glenanne");
 
@@ -39,14 +39,13 @@ public class DataInitializer implements CommandLineRunner {
         System.out.println("Loaded Owners....");
 
         Vet vet1 = new Vet();
-        vet1.setId(1L);
+
         vet1.setFristName("Sam");
         vet1.setLastName("Axe");
 
         vetService.Save(vet1);
 
         Vet vet2 = new Vet();
-        vet2.setId(2L);
         vet2.setFristName("Jessie");
         vet2.setLastName("Porter");
 
