@@ -50,7 +50,7 @@ public class DataInitializer implements CommandLineRunner {
         vet2.setFristName("Jessie");
         vet2.setLastName("Porter");
 
-        vetService.Save(vet1);
+        vetService.Save(vet2);
 
         System.out.println("Loaded Vets....");
 
