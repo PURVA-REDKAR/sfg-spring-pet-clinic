@@ -5,7 +5,7 @@ import petclinic.springframework.sfgspringpetclinic.model.BaseEntity;
 import java.util.*;
 
 public abstract class AbstractMapService<T extends BaseEntity,ID extends Long>{
-    protected Map<ID,T> map = new HashMap<>();
+    protected Map<Long,T> map = new HashMap<>();
 
 
 
@@ -28,7 +28,7 @@ public abstract class AbstractMapService<T extends BaseEntity,ID extends Long>{
             throw new RuntimeException("object cannot be null");
         }
 
-        map.put((ID) object.getId(),object);
+        map.put( object.getId(),object);
        // map.put(id,object);
         return object;
     }
